@@ -3,7 +3,7 @@ ___
 
 ### Description
 
-A CLI web scraping application to extract stats from https://www.iplt20.com - the official website of Indian Premier League.
+A CLI(Command line Interface) web scraping application to extract data from https://www.iplt20.com - the official website of Indian Premier League.
 The application allows user to extract following data sets from the website:
 * Most Runs
 * Most Runs (Over)
@@ -36,6 +36,7 @@ The application allows user to extract following data sets from the website:
 * Most Four Wickets
 * Player Points
 * Team Ranking
+* Team Vs Team & winner
 
 The data is available for the years 2008-2019 along with some all season stats.
 ___
@@ -51,6 +52,7 @@ pip install PyInquirer
 ### Run
 Clone the repository, change directory to the downloaded repository and type following in terminal:
 ```
-python scraper.py
+python ipl_data.py #for data 
+python ipl_matches.py #for team vs team & winner
 ```
 By default the application generates csv files which are saved in the same directory as of the script.

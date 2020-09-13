@@ -3,9 +3,9 @@ import requests
 import pandas as pd
 import csv
 
-url = "https://www.iplt20.com/matches/results/men/2011"
+url = "https://www.iplt20.com/matches/results/men/year" #replace year with your specified year
 content = requests.get(url)
-f = open('data-2011.csv','w', newline='')
+f = open('data-year.csv','w', newline='')  #replace year with your specified year
 writer = csv.writer(f)
 soup = BeautifulSoup(content.text,'html.parser')
 writer.writerow(['Home_team','Away_team','Winner'])
